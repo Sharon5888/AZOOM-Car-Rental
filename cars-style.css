@@ -1,0 +1,185 @@
+/* Reset basic spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #111827;
+    color: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Company name */
+header h1 {
+    font-size: 28px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Main area */
+main {
+    width: 100%;
+}
+
+/* First welcome section */
+main section:first-of-type {
+    min-height: 500px;
+    background-color: #dbeafe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+main section:first-of-type h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+main section:first-of-type p {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+main section:first-of-type a {
+    display: inline-block;
+    margin: 15px 8px 0;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+main section:first-of-type a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Why Choose Us section */
+main section:nth-of-type(2) {
+    padding: 70px 60px;
+    background-color: white;
+    text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+main section:nth-of-type(2) div {
+    display: inline-block;
+    width: 28%;
+    min-height: 180px;
+    margin: 10px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+main section:nth-of-type(2) h3 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+/* How It Works */
+main section:nth-of-type(3) {
+    padding: 70px 60px;
+    background-color: #eef2ff;
+}
+
+main section:nth-of-type(3) h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+main section:nth-of-type(3) ol {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+main section:nth-of-type(3) li {
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hide default horizontal lines */
+hr {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section:first-of-type h2 {
+        font-size: 32px;
+    }
+
+    main section:nth-of-type(2) div {
+        width: 90%;
+        display: block;
+        margin: 15px auto;
+    }
+
+    main section:nth-of-type(2),
+    main section:nth-of-type(3) {
+        padding: 50px 20px;
+    }
+}

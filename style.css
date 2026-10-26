@@ -1,0 +1,733 @@
+/* Reset basic spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #111827;
+    color: white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Company logo */
+header.logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    height: 60px;
+    width: auto;
+}
+
+header .logo img {
+    width: 150px;
+    height: 55px;
+
+    max-width: 150px;
+    max-height: 55px;
+
+    object-fit: contain;
+    display: block;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Main area */
+main {
+    width: 100%;
+}
+
+/* First welcome section */
+.home-hero {
+    min-height: 500px;
+
+    background-color: #dbeafe;
+    background-image: url("images/volvo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #020617;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.home-hero p {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #0f172a;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.home-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.45);
+
+    z-index: 1;
+}
+
+/* Buttons */
+.home-hero a {
+    display: inline-block;
+    margin: 15px 8px 0;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.home-hero a:hover {
+    background-color: #1d4ed8;
+}
+
+.home-hero h2,
+.home-hero p,
+.home-hero a {
+    position: relative;
+    z-index: 2;
+}
+
+/* Why Choose Us section */
+.features-section {
+    padding: 70px 60px;
+    background-color: white;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.features-section div {
+    display: inline-block;
+    width: 28%;
+    min-height: 180px;
+    margin: 10px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.features-section h3 {
+    margin-bottom: 15px;
+    color: #2563eb;
+    text-align: center;
+}
+
+.featured-cars {
+    padding: 70px 60px;
+    background-color: #f5f7fa;
+    text-align: center;
+}
+
+.featured-cars h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.featured-cars>p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.featured-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.featured-card {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.featured-card h3 {
+    font-size: 22px;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.featured-card p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.featured-card a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.featured-card a:hover {
+    background: #1d4ed8;
+}
+
+/* View all cars button */
+.view-all-cars {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 24px;
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.view-all-cars:hover {
+    background-color: #2563eb;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 70px 60px;
+    background-color: #eef2ff;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.how-it-works ol {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.how-it-works li {
+    margin-bottom: 12px;
+}
+
+.more-information {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.more-information p {
+    margin-bottom: 15px;
+    color: #475569;
+}
+
+.info-button {
+    display: inline-block;
+    padding: 11px 22px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.info-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+.site-footer {
+    background-color: #111827;
+    color: white;
+    padding: 50px 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+    color: #d1d5db;
+}
+
+.footer-column a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    color: #38bdf8;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #374151;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #d1d5db;
+}
+
+.policy-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px 60px;
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.policy-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0f172a;
+    font-size: 35px;
+}
+
+.policy-section p {
+    margin-bottom: 24px;
+    color: #334155;
+    line-height: 1.9;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.locations-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+
+.locations-section>h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.locations-section>p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.location-group {
+    margin-bottom: 60px;
+}
+
+.location-group h3 {
+    font-size: 28px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.location-intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.location-card {
+    width: 320px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    text-align: left;
+}
+
+.location-card h4 {
+    font-size: 22px;
+    color: #2563eb;
+    margin-bottom: 18px;
+}
+
+.location-card p {
+    margin-bottom: 15px;
+    color: #334155;
+}
+
+.location-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.location-note {
+    max-width: 750px;
+    margin: 20px auto 0;
+    padding: 30px;
+    background-color: #eef2ff;
+    border-radius: 12px;
+}
+
+.location-note h3 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.location-note p {
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-hero h2 {
+        font-size: 32px;
+    }
+
+    .features-section div {
+        width: 90%;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .features-section,
+    .how-it-works {
+        padding: 50px 20px;
+    }
+
+    .featured-cars {
+        padding: 50px 20px;
+    }
+
+    .featured-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .site-footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .locations-section {
+        padding: 40px 20px;
+    }
+
+    .location-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.rental-summary {
+    margin-top: 20px;
+    border-left: 4px solid #2563eb;
+    padding: 20px;
+    background-color: #eef2ff;
+    border-radius: 8px;
+}
+
+.rental-summary h3 {
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.rental-summary p {
+    margin-bottom: 5px;
+}
+
+/* =========================
+   Cars Page
+========================= */
+
+.cars-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f5f7fa;
+    min-height: 80vh;
+}
+
+.cars-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.cars-section>p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.car-card h3 {
+    font-size: 23px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.car-card p {
+    margin-bottom: 8px;
+}
+
+.car-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.car-card a:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   Form Pages
+   Booking / Return / Login
+========================= */
+
+.booking-section,
+.return-section,
+.login-section,
+.signup-section {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.booking-section h2,
+.return-section h2,
+.login-section h2,
+.signup-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.booking-section>p,
+.return-section>p,
+.login-section>p,
+.signup-section>p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.account-link {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.account-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account-link a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Form Buttons */
+form button {
+    margin-top: 22px;
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1d4ed8;
+}

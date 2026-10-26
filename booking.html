@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Car | AZoom Car Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/AZoom logo.png" alt="AZoom Car Rental Logo">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="booking.html">Book a Car</a>
+            <a href="return.html">Return Car</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="booking-section">
+
+            <h2>Book a Car</h2>
+
+            <p>
+                Complete the form below to reserve your electric vehicle.
+            </p>
+
+            <form id="bookingForm">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+
+                <label for="car">Select Car</label>
+                <select id="car" required>
+                    <option value="">-- Select a Car --</option>
+                    <option value="200">Tesla Model 3 - $200/day</option>
+                    <option value="150">BYD Atto 3 - $150/day</option>
+                    <option value="140">Hyundai Ioniq 5 - $140/day</option>
+                    <option value="300">Mercedes-Benz G 580 EQ - $300/day</option>
+                    <option value="250">BMW iX - $250/day</option>
+                    <option value="320">Porsche Taycan - $320/day</option>
+                    <option value="160">Volkswagen ID.4 - $160/day</option>
+                    <option value="125">Toyota bZ4X - $125/day</option>
+                </select>
+
+                <label for="branch">Pickup Branch</label>
+                <select id="branch" required>
+                    <option value="">-- Select Branch --</option>
+                    <option value="branch1">AZoom Branch 1</option>
+                    <option value="branch2">AZoom Branch 2</option>
+                </select>
+
+                <label for="pickupDate">Pickup Date</label>
+                <input type="date" id="pickupDate" required>
+
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate" required>
+
+                <label for="cardNumber">Credit Card Number</label>
+                <input type="text" id="cardNumber" maxlength="16" placeholder="Enter 16-digit card number" required>
+
+                <button type="button" onclick="calculateRental()">
+                    Calculate Rental
+                </button>
+
+                <div id="bookingResult"></div>
+
+                <button type="submit">
+                    Confirm Booking
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>AZoom Car Rental</h3>
+                <p>
+                    Your convenient and environmentally friendly
+                    electric car rental service.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>About Us</h3>
+
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+
+                <p>Email: info@azoom.com</p>
+                <p>Phone: +65 6465 8289</p>
+                <p>Singapore</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 AZoom Car Rental. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Car | AZoom Car Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/AZoom logo.png" alt="AZoom Car Rental Logo">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="booking.html">Book a Car</a>
+            <a href="return.html">Return Car</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="return-section">
+
+            <h2>Return Car</h2>
+
+            <p>
+                Please enter the return details below.
+            </p>
+
+            <form id="returnForm">
+
+                <label for="bookingRef">Booking Reference</label>
+                <input type="text" id="bookingRef" placeholder="Example: AZ123456" required>
+
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" required>
+
+                <label for="returnLocation">Return Location</label>
+                <select id="returnLocation" required>
+
+                    <option value="">
+                        -- Select Return Location --
+                    </option>
+
+                    <option value="carpark1">
+                        Designated Car Park 1
+                    </option>
+
+                    <option value="carpark2">
+                        Designated Car Park 2
+                    </option>
+
+                </select>
+
+                <label for="rentalCost">
+                    Original Rental Cost ($)
+                </label>
+
+                <input type="number" id="rentalCost" min="0" placeholder="Example: 360" required>
+
+                <label for="damageStatus">
+                    Vehicle Inspection
+                </label>
+
+                <select id="damageStatus">
+                    <option value="no">
+                        No Damage
+                    </option>
+
+                    <option value="yes">
+                        Damage Found
+                    </option>
+                </select>
+
+                <label for="damageCost">
+                    Damage Charge ($)
+                </label>
+
+                <input type="number" id="damageCost" min="0" value="0">
+
+                <button type="button" onclick="calculateFinalBill()">
+                    Calculate Final Bill
+                </button>
+
+                <div id="finalBillResult"></div>
+
+                <button type="submit">
+                    Complete Return
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>AZoom Car Rental</h3>
+                <p>
+                    Your convenient and environmentally friendly
+                    electric car rental service.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>About Us</h3>
+
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+
+                <p>Email: info@azoom.com</p>
+                <p>Phone: +65 6465 8289</p>
+                <p>Singapore</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 AZoom Car Rental. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
